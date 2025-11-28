@@ -1,0 +1,1357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+        /*........................Banner........................*/
+
+
+
+/* ------------ Home Container ------------- */
+.home_container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.home_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------------ Logo ------------- */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 250px;
+}
+
+/* ------------ Responsive Banner Text ------------- */
+.text_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.text_banner h3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.text_banner h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.text_banner h2 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+/* ------------- Book Button ---------------- */
+.book-btn {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 14px 35px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #218838;
+}
+
+/* -------------------------------------------------------
+   📱 MOBILE RESPONSIVE (max-width: 600px)
+--------------------------------------------------------*/
+@media (max-width: 600px) {
+    .logo img {
+        width: 140px;
+    }
+
+    .text_banner h3 {
+        font-size: 1.4rem;
+    }
+
+    .text_banner h1 {
+        font-size: 2.4rem;
+    }
+
+    .text_banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .book-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* -------------------------------------------------------
+   📲 TABLET RESPONSIVE (600px–900px)
+--------------------------------------------------------*/
+@media (max-width: 900px) {
+    .logo img {
+        width: 180px;
+    }
+
+    .text_banner h3 {
+        font-size: 1.8rem;
+    }
+
+    .text_banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .text_banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .book-btn {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}
+
+/* -------------------------------------------------------
+   💻 LAPTOP RESPONSIVE (900px–1200px)
+--------------------------------------------------------*/
+@media (max-width: 1200px) {
+    .logo img {
+        width: 220px;
+    }
+
+    .text_banner h1 {
+        font-size: 4rem;
+    }
+
+    .text_banner h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* -------------------------------------------------------
+   🖥️ WIDE SCREEN (above 1500px)
+--------------------------------------------------------*/
+@media (min-width: 1500px) {
+    .text_banner h1 {
+        font-size: 6rem;
+    }
+    .text_banner h2 {
+        font-size: 3.5rem;
+    }
+    .text_banner h3 {
+        font-size: 3rem;
+    }
+}
+
+
+/*...................package_container.....................*/
+
+
+
+
+/* ------------------- PACKAGE CONTAINER ------------------ */
+.package_container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgb(255, 246, 235);
+}
+
+.package_container > h1 {
+    font-size: 70px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+
+/* ------------------- PACKAGE GRID ------------------ */
+.package_grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+    flex-wrap: wrap;    /* IMPORTANT for responsiveness */
+}
+
+/* ------------------- PACKAGE ITEMS ------------------ */
+.package_item img,
+.package_item_2 img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.package_item h2,
+.package_item_2 h2 {
+    max-width: 500px;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.package_item h1,
+.package_item_2 h1 {
+    max-width: 500px;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.package_item p,
+.package_item_2 p {
+    max-width: 350px;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Center card lower effect */
+.package_item_2 {
+    margin-top: 80px;
+}
+
+/* -----------------------------------------------------
+   📲 TABLET RESPONSIVE (900px)
+------------------------------------------------------ */
+@media (max-width: 900px) {
+    .package_container > h1 {
+        font-size: 50px;
+    }
+
+    .package_grid {
+        gap: 30px;
+    }
+
+    .package_item_2 {
+        margin-top: 40px; /* reduce gap */
+    }
+}
+
+/* -----------------------------------------------------
+   📱 MOBILE RESPONSIVE (600px)
+------------------------------------------------------ */
+@media (max-width: 600px) {
+    .package_container > h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .package_item_2 {
+        margin-top: 0px;   /* all boxes align naturally */
+    }
+
+    .package_item img,
+    .package_item_2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .package_item h2,
+    .package_item_2 h2 {
+        font-size: 18px;
+    }
+
+    .package_item h1,
+    .package_item_2 h1 {
+        font-size: 24px;
+    }
+
+    .package_item p,
+    .package_item_2 p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
+/* -----------------------------------------------------
+   🖥️ WIDE SCREEN (1600px+)
+------------------------------------------------------ */
+@media (min-width: 1600px) {
+    .package_container > h1 {
+        font-size: 90px;
+    }
+
+    .package_item img,
+    .package_item_2 img {
+        max-width: 500px;
+    }
+}
+
+
+        /* Why Book Us*/
+
+/* =====================================================
+   BOOK WITH US CONTAINER
+===================================================== */
+.Book_Us_Container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 40px;
+    background-color: rgb(47, 90, 70);
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* LEFT SIDE TEXT */
+.Book_Text {
+    flex: 1 1 500px; /* Flexibly adjusts with min 500px */
+}
+
+.Book_Text h2 {
+    color: #ffffff;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+.Book_Text p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* RIGHT SIDE IMAGE */
+.Book_Image {
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.Book_Image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =====================================================
+   TABLET SCREENS (max-width: 900px)
+===================================================== */
+@media (max-width: 900px) {
+    .Book_Us_Container {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .Book_Text h2 {
+        font-size: 50px;
+    }
+
+    .Book_Text p {
+        font-size: 18px;
+    }
+
+    .Book_Image img {
+        max-width: 600px;
+    }
+}
+
+/* =====================================================
+   MOBILE SCREENS (max-width: 600px)
+===================================================== */
+@media (max-width: 600px) {
+    .Book_Us_Container {
+        flex-direction: column; /* Stack vertically */
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .Book_Text h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .Book_Text p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Book_Image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* =====================================================
+   ULTRA WIDE SCREENS (min-width: 1600px)
+===================================================== */
+@media (min-width: 1600px) {
+    .Book_Us_Container {
+        padding: 80px 100px;
+        gap: 60px;
+    }
+
+    .Book_Text h2 {
+        font-size: 90px;
+    }
+
+    .Book_Text p {
+        font-size: 26px;
+    }
+
+    .Book_Image img {
+        max-width: 1000px;
+    }
+}
+
+            
+
+
+/*.................Popular Destination................*/
+
+
+
+
+/* =====================================================
+   GALLERY CONTAINER
+===================================================== */
+.Gallery_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 40px;
+    background-color: rgb(255, 246, 235);
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* LEFT SIDE TEXT */
+.Gallery_Text {
+    flex: 1 1 500px; /* Flexible width */
+}
+
+.Gallery_Text h2 {
+    color: black;
+    font-size: 70px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.Gallery_Text p {
+    color: black;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* RIGHT SIDE IMAGE */
+.Gallery_Image {
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.Gallery_Image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =====================================================
+   TABLET SCREENS (max-width: 900px)
+===================================================== */
+@media (max-width: 900px) {
+    .Gallery_Container {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .Gallery_Text h2 {
+        font-size: 50px;
+    }
+
+    .Gallery_Text p {
+        font-size: 18px;
+    }
+
+    .Gallery_Image img {
+        max-width: 600px;
+    }
+}
+
+/* =====================================================
+   MOBILE SCREENS (max-width: 600px)
+===================================================== */
+@media (max-width: 600px) {
+    .Gallery_Container {
+        flex-direction: column; /* Stack vertically */
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .Gallery_Text h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .Gallery_Text p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Gallery_Image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* =====================================================
+   ULTRA WIDE SCREENS (min-width: 1600px)
+===================================================== */
+@media (min-width: 1600px) {
+    .Gallery_Container {
+        padding: 80px 100px;
+        gap: 60px;
+    }
+
+    .Gallery_Text h2 {
+        font-size: 90px;
+    }
+
+    .Gallery_Text p {
+        font-size: 26px;
+    }
+
+    .Gallery_Image img {
+        max-width: 1000px;
+    }
+}
+
+
+
+
+
+/*...............Destination...........*/
+
+
+
+/* ==============================
+   DESTINATION CONTAINER
+============================== */
+.Destination_container {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("images/Gallery/12.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Light overlay */
+.Destination_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    z-index: 1;
+}
+
+/* Make content appear above overlay */
+.Destination_container * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Main heading */
+.Destination_container h2 {
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Grid layout */
+.Destination_grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* reduced gap for better responsiveness */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+/* Individual items */
+.Destination_item,
+.Destination_item_2 {
+    max-width: 500px;
+    text-align: center;
+}
+
+.Destination_item img,
+.Destination_item_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Destination_item h1,
+.Destination_item_2 h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.Destination_item p,
+.Destination_item_2 p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* ==============================
+   TABLET SCREENS (max-width: 992px)
+============================== */
+@media (max-width: 992px) {
+    .Destination_container h2 {
+        font-size: 50px;
+    }
+
+    .Destination_item h1,
+    .Destination_item_2 h1 {
+        font-size: 24px;
+    }
+
+    .Destination_item p,
+    .Destination_item_2 p {
+        font-size: 15px;
+    }
+
+    .Destination_grid {
+        gap: 40px;
+    }
+}
+
+/* ==============================
+   MOBILE SCREENS (max-width: 600px)
+============================== */
+@media (max-width: 600px) {
+    .Destination_container {
+        padding: 40px 15px;
+    }
+
+    .Destination_container h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .Destination_grid {
+        flex-direction: column; /* stack items vertically */
+        gap: 30px;
+        align-items: center;
+    }
+
+    .Destination_item h1,
+    .Destination_item_2 h1 {
+        font-size: 20px;
+    }
+
+    .Destination_item p,
+    .Destination_item_2 p {
+        font-size: 14px;
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+/* ==============================
+   ULTRA WIDE SCREENS (min-width: 1600px)
+============================== */
+@media (min-width: 1600px) {
+    .Destination_container h2 {
+        font-size: 90px;
+    }
+
+    .Destination_item h1,
+    .Destination_item_2 h1 {
+        font-size: 36px;
+    }
+
+    .Destination_item p,
+    .Destination_item_2 p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+
+    .Destination_grid {
+        gap: 100px;
+    }
+}
+
+
+
+
+/*................Activites...........*/
+
+
+/* ==============================
+   ACTIVITIES CONTAINER
+============================== */
+.Activites_container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(47, 90, 70);
+}
+
+.Activites_container h1 {
+    color: rgb(101, 247, 179);
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Grid layout */
+.Activites_grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;  /* reduce gap for smaller screens */
+    flex-wrap: wrap; /* wrap items for responsiveness */
+}
+
+/* Individual items */
+.Activites_item,
+.Activites_item_2 {
+    max-width: 500px;
+    text-align: center;
+}
+
+.Activites_item img,
+.Activites_item_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Activites_item h2,
+.Activites_item_2 h2 {
+    color: rgb(101, 247, 179);
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.Activites_item p,
+.Activites_item_2 p {
+    color: gray;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px auto 50px auto;
+    width: 90%;
+}
+
+/* ==============================
+   TABLET SCREENS (max-width: 992px)
+============================== */
+@media (max-width: 992px) {
+    .Activites_container h1 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .Activites_item h2,
+    .Activites_item_2 h2 {
+        font-size: 24px;
+    }
+
+    .Activites_item p,
+    .Activites_item_2 p {
+        font-size: 15px;
+    }
+
+    .Activites_grid {
+        gap: 40px;
+    }
+}
+
+/* ==============================
+   MOBILE SCREENS (max-width: 600px)
+============================== */
+@media (max-width: 600px) {
+    .Activites_container h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .Activites_grid {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .Activites_item h2,
+    .Activites_item_2 h2 {
+        font-size: 20px;
+    }
+
+    .Activites_item p,
+    .Activites_item_2 p {
+        font-size: 14px;
+        width: 95%;
+        margin-left: 0;
+    }
+}
+
+/* ==============================
+   ULTRA WIDE SCREENS (min-width: 1600px)
+============================== */
+@media (min-width: 1600px) {
+    .Activites_container h1 {
+        font-size: 90px;
+    }
+
+    .Activites_item h2,
+    .Activites_item_2 h2 {
+        font-size: 36px;
+    }
+
+    .Activites_item p,
+    .Activites_item_2 p {
+        font-size: 18px;
+        max-width: 550px;
+    }
+
+    .Activites_grid {
+        gap: 120px;
+    }
+}
+
+
+
+/* ......................travel-testimony ....................*/
+
+
+/* ==============================
+   TRAVEL TESTIMONIALS
+============================== */
+.travel-testimony {
+    background-color: rgb(255, 246, 235);
+    padding: 50px 20px;
+}
+
+/* Main title */
+.travel-testimony .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px; /* base size */
+    margin-bottom: 50px;
+}
+
+/* Testimony grid */
+.testimony_grid {
+    display: flex;
+    flex-wrap: wrap;           /* allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 50px;                 /* base gap between boxes */
+}
+
+/* Individual testimonial boxes */
+.testimony-box {
+    width: 400px;
+    padding: 25px;
+    background: #ffefdf;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Testimonial heading */
+.testimony-box h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial text */
+.testimony-box h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ==============================
+   TABLET SCREENS (max-width: 992px)
+============================== */
+@media (max-width: 992px) {
+    .travel-testimony .title {
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+
+    .testimony-box {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .testimony-box h2 {
+        font-size: 16px;
+    }
+
+    .testimony-box h3 {
+        font-size: 15px;
+    }
+
+    .testimony_grid {
+        gap: 30px;
+    }
+}
+
+/* ==============================
+   MOBILE SCREENS (max-width: 600px)
+============================== */
+@media (max-width: 600px) {
+    .travel-testimony .title {
+        font-size: 36px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .testimony_grid {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .testimony-box {
+        width: 90%; /* take most of screen */
+        padding: 15px;
+    }
+
+    .testimony-box h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .testimony-box h3 {
+        font-size: 14px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* ==============================
+   ULTRA WIDE SCREENS (min-width: 1600px)
+============================== */
+@media (min-width: 1600px) {
+    .travel-testimony .title {
+        font-size: 90px;
+    }
+
+    .testimony-box {
+        width: 450px;
+        padding: 30px;
+    }
+
+    .testimony-box h2 {
+        font-size: 20px;
+    }
+
+    .testimony-box h3 {
+        font-size: 18px;
+    }
+
+    .testimony_grid {
+        gap: 70px;
+    }
+}
+
+
+
+
+/*.............................Bottom Container.............................*/
+
+
+/* Container */
+.Bottam_Container {
+    text-align: center;
+    background-color: rgb(30, 54, 30);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Heading */
+.Bottam_Container h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+/* Flex container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;  /* Allows wrapping on smaller screens */
+}
+
+/* Booking box */
+.booking-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;  /* Keeps it readable */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Booking heading */
+.booking-box h2 {
+    color: #c4c4c4;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.booking-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-box label {
+    font-weight: bold;
+    text-align: left;
+    color: #c4c4c4;
+}
+
+.booking-box input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+}
+
+.booking-box button {
+    padding: 12px;
+    background-color: #047a0a;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-box button:hover {
+    background-color: #008080;
+}
+
+/* ==============================
+   RESPONSIVE MEDIA QUERIES
+============================== */
+
+/* Tablets (<= 992px) */
+@media (max-width: 992px) {
+    .Bottam_Container h1 {
+        font-size: 50px;
+    }
+
+    .booking-box h2 {
+        font-size: 32px;
+    }
+
+    .booking-box input {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (<= 767px) */
+@media (max-width: 767px) {
+    .Bottam_Container h1 {
+        font-size: 36px;
+    }
+
+    .booking-box {
+        padding: 20px;
+        margin-left: 0; /* Center on mobile */
+    }
+
+    .booking-box h2 {
+        font-size: 28px;
+    }
+
+    .booking-box input {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Ultra-wide screens (> 1600px) */
+@media (min-width: 1600px) {
+    .Bottam_Container h1 {
+        font-size: 90px;
+    }
+
+    .booking-box {
+        max-width: 600px;
+        padding: 40px;
+    }
+
+    .booking-box h2 {
+        font-size: 48px;
+    }
+
+    .booking-box input {
+        font-size: 18px;
+    }
+
+    .booking-box button {
+        font-size: 18px;
+        padding: 16px;
+    }
+}
+
+
+
+/* Contact Info */
+
+
+.contact-icons {
+    padding: 20px;
+    color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Text styling */
+.contact-icons p {
+    margin: 5px 0;
+}
+
+/* Icons */
+.icon-container,
+.icon-container-2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    padding: 10px 0;
+}
+
+.icon-container img {
+    width: 70px;   /* smaller than before */
+    height: 70px;
+}
+
+.icon-container-2 img {
+    width: 40px;   /* smaller social icons */
+    height: 40px;
+}
+
+/* Office hours & contact headings */
+.office-hours,
+.contact-us {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Day,
+.Timing,
+.phone,
+.address,
+.email {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets: 768px - 991px */
+@media (max-width: 991px) {
+    .contact-icons {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .office-hours,
+    .contact-us {
+        font-size: 24px;
+    }
+
+    .Day,
+    .Timing,
+    .phone,
+    .address,
+    .email {
+        font-size: 16px;
+    }
+
+    .icon-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-container-2 img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+    .contact-icons {
+        padding: 10px;
+        align-items: center; /* center everything on mobile */
+        text-align: center;
+    }
+
+    .office-hours,
+    .contact-us {
+        font-size: 22px;
+    }
+
+    .Day,
+    .Timing,
+    .phone,
+    .address,
+    .email {
+        font-size: 14px;
+    }
+
+    .icon-container,
+    .icon-container-2 {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .icon-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-container-2 img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Ultra-wide screens >1600px */
+@media (min-width: 1600px) {
+    .office-hours,
+    .contact-us {
+        font-size: 36px;
+    }
+
+    .Day,
+    .Timing,
+    .phone,
+    .address,
+    .email {
+        font-size: 22px;
+    }
+
+    .icon-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-container-2 img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Floting */
+
+/* Floating Icons Container */
+.floating-icons {
+    position: fixed;
+    right: 20px;    /* distance from right edge */
+    bottom: 20px;   /* distance from bottom edge */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+/* Floating Icons Style */
+.floating-icons img {
+    width: 50px;   /* default size */
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.floating-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Media Queries */
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .floating-icons {
+        right: 15px;
+        bottom: 15px;
+        gap: 10px;
+    }
+
+    .floating-icons img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .floating-icons {
+        flex-direction: row;  /* show icons in a row on small screens */
+        right: 50%;
+        bottom: 10px;
+        transform: translateX(50%); /* center horizontally */
+        gap: 10px;
+    }
+
+    .floating-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Ultra-Wide Screens (>1600px) */
+@media (min-width: 1600px) {
+    .floating-icons img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
